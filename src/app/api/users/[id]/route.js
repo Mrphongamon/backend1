@@ -20,6 +20,7 @@ export async function GET( request, {params}) {
       {
         success: true,
         message: "ดึงข้อมูลผู้ใช้สำเร็จ",
+        data:{id},
       },
       { status: 200 }
     );
@@ -47,8 +48,6 @@ export async function GET( request, {params}) {
 // PUT Function
 //================================================================================
 /**
- * Route Handler สำหรับ HTTP Method: GET
- * ทำหน้าที่รองรับ Request แบบ GET ที่เข้ามายัง Endpoint นี้
  */
 export async function PUT( request, {params}) {
   try {
@@ -89,8 +88,6 @@ export async function PUT( request, {params}) {
 // DELETE Function
 //================================================================================
 /**
- * Route Handler สำหรับ HTTP Method: GET
- * ทำหน้าที่รองรับ Request แบบ GET ที่เข้ามายัง Endpoint นี้
  */
 export async function DELETE( request, {params}) {
   try {
